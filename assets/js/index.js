@@ -1,9 +1,7 @@
 const buttonShow = document.getElementById('btnShow');
 const buttonHide = document.getElementById('btnHide');
-
 const hide = document.getElementById('hidden');
 const mobiHide = document.getElementById('mobi-hidden');
-
 
 buttonShow.addEventListener('click', () => {
   hide.style.display = 'block';

@@ -12,13 +12,16 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
    
+  <!-- Animations Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- Custom CSS -->
   <link href="./assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
-  <header> 
+   <header> 
     <div class="container"> 
       <nav id="idea" class="navbar navbar-expand-lg fixed-top bg-light navbar-light py-0">
        <div class="container">
@@ -38,16 +41,15 @@
                </ul>
            </div>
        </div> 
-   </nav>
+    </nav>
     </div> 
-  </header> 
-  
+  </header>  
+
  <div class="landing" id="home">  
   <div id="carouselFade" class="carousel slide carousel-fade text-white" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="row one ml-0">
-
           <div class="container">
             <div class="col-md-12 splash">
                 <div>
@@ -64,9 +66,10 @@
                       </p>
                     </div>
                     <img src="./assets/images/SOCIALS ICONS.png" />
+                    <img src="./assets/images/bigBox.png" alt="" class="big-box">
                 </div>
-                </div>
-                </div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -77,6 +80,7 @@
                     <div class="intro">
                         <h4 class="text-left">Best of</h4>
                         <h1 class="font-weight-bold text-left head">ARCHITECTURAL <br/> PHOTOGRAPHY</h1>
+                        <img src="./assets/images/bigBox.png" alt="" class="big-box">
                     </div>
                     <div class="text-left">
                       <p> Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum
@@ -88,8 +92,8 @@
                     </div>
                     <img src="./assets/images/SOCIALS ICONS.png" />
                 </div>
-                </div>
-                </div>
+              </div>
+            </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -98,6 +102,7 @@
             <div class="col-md-12 splash">
                 <div>
                     <div class="intro">
+                      <img src="./assets/images/bigBox.png" alt=""class="big-box">
                         <h4 class="text-left">Best of</h4>
                         <h1 class="font-weight-bold text-left head">ARCHITECTURAL <br/> PHOTOGRAPHY</h1>
                     </div>
@@ -111,12 +116,11 @@
                     </div>
                     <img src="./assets/images/SOCIALS ICONS.png" />
                 </div>
-                </div>
-                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
-  
   </div>
      
         
@@ -129,38 +133,34 @@
         </div> -->     
     
   </div> 
-  
+   
 
 <!-- About section -->
- <section class="about py-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-6 pl-3 pr-5 px-lg-1 pb-5">
-        <img src="./assets/images/img-1.png" alt="" class="img-fluid image"/>
-        <img src="./assets/images/img-2.png" alt="" class="img-fluid image stack"/>
-      </div>
-
-      <div class="col-6 pl-5 pr-3 px-lg-1 pb-5">
-
-        <div>
-          <img src="./assets/images/Rectangle 8 2.png" alt="" class="img-fluid box">
-          <p class="small">About</p>
-          <h2 class="big">OUR COMPANY.</h2>
+  <section class="about py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 pl-3 pr-5 px-lg-1 pb-5">
+          <img src="./assets/images/img-1.png" alt="" class="img-fluid image"/>
+          <img src="./assets/images/img-2.png" alt="" class="img-fluid image stack"/>
         </div>
-        <p>Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum patrioque vix ad,
-           id cum habeo delicata, ne minim comprehensam eos. Eu vim tempor aliquip.
-            Docendi delectus insolens pri ei, no vel ludus putant persius.
-        </p>
-        <p class="pt-3">
-            Facilis denique eam ut,
-             ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. 
-             Solum voluptaria referrentur ad usu.
-             </p>
-            
+        <div class="col-6 pl-5 pr-3 px-lg-1 pb-5">
+          <div>
+            <img src="./assets/images/Rectangle 8 2.png" alt="" class="img-fluid box">
+            <p class="small">About</p>
+            <h2 class="big">OUR COMPANY.</h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum patrioque vix ad,
+            id cum habeo delicata, ne minim comprehensam eos. Eu vim tempor aliquip.
+              Docendi delectus insolens pri ei, no vel ludus putant persius.
+          </p>
+          <p class="pt-3">
+              Facilis denique eam ut,
+              ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. 
+              Solum voluptaria referrentur ad usu.
+              </p>
+        </div>
       </div>
-
     </div>
-  </div>
 </section> 
   
 
@@ -197,205 +197,331 @@
 
   <section id="portfolio" class="portfolio py-5">
   <div class="container">  
-    <!-- Nav links -->
+<!-- Nav links -->
        <ul class="nav justify-content-center" >
-        <li class="nav-item"><a href="#all" class="nav-link mr-3 dark active">ALL</a></li>  
-        <li class="nav-item"><a href="#new-york" class="nav-link mr-3 dark">NEW YORK</a></li>
-        <li class="nav-item"><a href="#rome" class="nav-link mr-3 dark">ROME</a></li>
-        <li class="nav-item"><a href="#london" class="nav-link mr-3 dark">LONDON</a></li>
-        <li class="nav-item"><a href="#paris" class="nav-link mr-3 dark">PARIS</a></li>
-        <li class="nav-item"><a href="#milan" class="nav-link mr-3 dark">MILAN</a></li>
+        <li class="nav-item"><a href="#all" class="nav-link mr-3 g-link dark active">ALL</a></li>  
+        <li class="nav-item"><a href="#new-york" class="nav-link mr-3 g-link dark">NEW YORK</a></li>
+        <li class="nav-item"><a href="#rome" class="nav-link mr-3 g-link dark">ROME</a></li>
+        <li class="nav-item"><a href="#london" class="nav-link mr-3 g-link dark">LONDON</a></li>
+        <li class="nav-item"><a href="#paris" class="nav-link mr-3 g-link dark">PARIS</a></li>
+        <li class="nav-item"><a href="#milan" class="nav-link mr-3 g-link dark">MILAN</a></li>
     </ul> 
 
-    <!-- Portfolio-images -->
+<!-- Portfolio-images -->
 
-
-<div class="container" id="gallery-wrapper">
-
+<div class="container pt-5" id="gallery-wrapper">
      <div class="row py-2">
       <div class="col-6">
         <div class="row">
-          <div class="col-6 px-2">
-            <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
-
+          <div class="col-6 px-2 ria" data-toggle="modal" data-target="#img1" >
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
+            </div>
           </div>
-          <div class="col-6 px-2">
-        <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
-            
+          <div class="col-6 px-2 ria"data-toggle="modal" data-target="#img2" >
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 pt-3 px-2">
-        <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
-
+          <div class="col-12 pt-3 px-2 ria"data-toggle="modal" data-target="#img3" >
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-6 px-2">
-        <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+
+      <div class="col-6 px-2" data-toggle="modal" data-target="#img4">
+        <div data-aos="flip-left">
+          <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <div class="row py-2">
+      <div class="col-6 px-2" data-toggle="modal" data-target="#img5">
+        <div data-aos="flip-left">
+          <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-6 px-2" data-toggle="modal" data-target="#img6">
+        <div data-aos="flip-left">
+          <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+        </div>
       </div>
 
     </div>
     <div class="row py-2">
-      <div class="col-6 px-2">
-        <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
-
-      </div>
-      <div class="col-6 px-2">
-        <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
-
-      </div>
-
-    </div>
-    <div class="row py-2">
-      <div class="col-6">
+      <div class="col-6" >
         <div class="row">
-          <div class="col-6 px-2">
-            <img src="./assets/images/photo-7.png" alt="" class="img-fluid">
-
+          <div class="col-6 px-2" data-toggle="modal" data-target="#img7">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-7.png" alt="" class="img-fluid">
+            </div>
           </div>
-          <div class="col-6 px-2">
-        <img src="./assets/images/photo-8.png" alt="" class="img-fluid">
-            
+          <div class="col-6 px-2"data-toggle="modal" data-target="#img8">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-8.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12 pt-3 px-2">
-        <img src="./assets/images/photo-9.png" alt="" class="img-fluid">
-
+          <div class="col-12 pt-3 px-2" data-toggle="modal" data-target="#img9">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-9.png" alt="" class="img-fluid">
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-6 px-2">
+      <div class="col-6 px-2"data-toggle="modal" data-target="#img10">
+        <div data-aos="flip-left">
         <img src="./assets/images/photo-10.png" alt="" class="img-fluid">
+        </div>
       </div>
 
     </div>
 
-    <!-- Hidden Gallery -->
+<!-- Hidden Gallery -->
       <div id="hidden">
         <div class="row  py-2">
           <div class="col-6">
             <div class="row">
-              <div class="col-6 px-2">
-                <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
-
+              <div class="col-6 px-2" data-toggle="modal" data-target="#img11">
+                <div data-aos="flip-left">
+                  <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
+                </div>
               </div>
-              <div class="col-6 px-2">
-            <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
-                
+              <div class="col-6 px-2" data-toggle="modal" data-target="#img12">
+                <div data-aos="flip-left">
+                  <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
+                </div>
               </div>
             </div>
             <div class="row">
-              <div class="col-12 pt-3 px-2">
-            <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
-
+              <div class="col-12 pt-3 px-2" data-toggle="modal" data-target="#img13">
+                <div data-aos="flip-left">
+                  <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-6 px-2">
-            <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+          <div class="col-6 px-2" data-toggle="modal" data-target="#img14">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+            </div>
           </div>
 
         </div>
         <div class="row py-2">
-          <div class="col-6 px-2">
-            <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
-
+          <div class="col-6 px-2" data-toggle="modal" data-target="#img15">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
+            </div>
           </div>
-          <div class="col-6 px-2">
-            <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
-
+          <div class="col-6 px-2" data-toggle="modal" data-target="#img16">
+            <div data-aos="flip-left">
+              <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+            </div>
           </div>
 
         </div>
-
       </div>
-
     </div>
-      <!-- Mobile-view Gallery -->
+
+<!-- Mobile Gallery -->
       <div class="container mobile">
-<div class="row py-4 ">
+        <div class="row py-4">
 
-  <div>
-  <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-    <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob2.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob4.png" alt="" class="img-fluid full">
-  </div>
-</div>
+          <div >
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3"  data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob2.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob4.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+          </div>
 
-<div id="mobi-hidden">
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
-  </div>
-  <div class="col-12 py-3">
-    <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
-  </div>
-</div>
-</div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          <div id="mobi-hidden">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
+              <div data-aos="flip-left">
+                <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+
+<!-- Modal Images-->
+      <div>
+        <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-1.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-2.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-3.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-7.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-8.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-9.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-10.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-1.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-2.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/modal-3.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="img16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-  </div>
-
 
   <div class="text-center">
     <button class="btn text-center" id="btnShow">
-      <img src="./assets/images/ant-design_plus-circle-outlined.png" alt="" class="img-fluid">
+      <img src="./assets/images/ant-design_plus-circle-outlined.png" alt="" class="img-fluid pulse">
     </button>
   </div>
   <div class="text-center">
     <button class="btn text-center" id="btnHide">
-     <img src="./assets/images/minus-circle-outlined.svg" alt="" class="img-fluid size"> 
+     <img src="./assets/images/minus-circle-outlined.svg" alt="" class="img-fluid size pulse g-link"> 
      </button> 
    </div>
  </section>  
 
 <!-- Contact -->
 
-<section id="contact" class="py-5">
+ <section id="contact" class="py-5">
   <!-- location -->
   <div class="container">
   <div class="location-bg text-white">
@@ -411,46 +537,44 @@
     <img src="./assets/images/map.png" alt="" class="img-fluid">
   </div> 
 
-   <!-- Contact form  -->
-  <div class="px-5">
-    <h3 class="teal"> <strong>GET IN TOUCH</strong></h3>
-    <p>Facilis denique eam ut, ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. Solum voluptaria referrentur ad usu.</p>
-  
-    <div class="row py-4">
-      <div class="col-6">
-        <form>
-          <div class="form-group pb-4">
-            <input type="text" id="name" placeholder="Name*" class="form-control pt-3  pb-5">
+<!-- Contact form  -->
+      <div class="px-5">
+      <h3 class="teal"> <strong>GET IN TOUCH</strong></h3>
+      <p>Facilis denique eam ut, ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. Solum voluptaria referrentur ad usu.</p>
+    
+      <div class="row py-4">
+        <div class="col-6">
+          <form>
+            <div class="form-group pb-4">
+              <input type="text" id="name" placeholder="Name*" class="form-control pt-3  pb-5">
 
-          </div>
-          <div class="form-group pb-4">
+            </div>
+            <div class="form-group pb-4">
 
-          <input type="text" id="name" placeholder="Email*" class="form-control pt-3 pb-5">
-          </div>
-          <textarea id="message" cols="30" rows="5" placeholder="Message*" class="form-control pt-3 pb-5"></textarea>
-          <div class="pt-5">
-            <button class="btn sendBtn py-3 px-5">SEND</button>
-          </div>
-        </form>
+            <input type="text" id="name" placeholder="Email*" class="form-control pt-3 pb-5">
+            </div>
+            <textarea id="message" cols="30" rows="5" placeholder="Message*" class="form-control pt-3 pb-5"></textarea>
+            <div class="pt-5">
+              <button class="btn sendBtn py-3 px-5">SEND</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-6">
+          <dl>
+            <dt>Phone</dt>
+            <dd>+1 56775 345 34 / +1 56775 345 34</dd>
+            <dt>Email</dt>
+            <dd>ark.photography@hotmail.com</dd>
+            <dt>Address</dt>
+            <dd>23 fillory road, New York. NY 10065</dd>
+
+          </dl>
+          
+        </div>
       </div>
-      <div class="col-6">
-        <dl>
-          <dt>Phone</dt>
-          <dd>+1 56775 345 34 / +1 56775 345 34</dd>
-          <dt>Email</dt>
-          <dd>ark.photography@hotmail.com</dd>
-          <dt>Address</dt>
-          <dd>23 fillory road, New York. NY 10065</dd>
-
-        </dl>
-        
-      </div>
+      </div> 
     </div>
-  </div> 
-
-
-</div>
-</section> 
+  </section> 
 
 <!-- Footer -->
 <footer class="py-4">
@@ -475,7 +599,16 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
-      <!-- custom js -->
-      <script src="./assets/js/index.js"></script>
+    <!-- Animations JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Animations Library -->
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- custom js -->
+    <script src="./assets/js/index.js"></script>
+    
 </body>
 </html>
