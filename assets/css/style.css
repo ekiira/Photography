@@ -1,6 +1,5 @@
 html {
   scroll-behavior: smooth;
-  width: 100%;
 }
 
 body {
@@ -51,9 +50,9 @@ body {
   background-position: center;
 }
 
-.image {
+/* .image {
 
-}
+} */
 
 .stack {
   position: absolute;
@@ -64,7 +63,8 @@ body {
 .big {
   color: black;
   letter-spacing: 0.05em;
-  font-weight: bold;
+  font-weight: 500;
+  font-size: 2.5rem;
 }
 
 .phg {
@@ -88,6 +88,32 @@ body {
 #hidden {
   display: none;
 }
+
 #btnHide {
   display: none;
+}
+
+.box {
+  position: relative;
+  top: 58px;
+  left: -40px;
+}
+
+.small {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.nav .active {
+  border-bottom:  4px solid rgba(100, 157, 200, 0.4);
+}
+
+.size {
+  width: 49px;
+  height: 49px;
+
+}
+
+#gallery-wrapper {
+  text-align: -webkit-center;
 }
