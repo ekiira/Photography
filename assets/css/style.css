@@ -48,6 +48,10 @@ body {
   align-items: center; 
 }
 
+.lct {
+  white-space: nowrap;
+}
+
 .location-bg {
   width:100% ;
   height: 10rem;
@@ -56,19 +60,13 @@ body {
   background-position: center;
 }
 
-.lct {
-
-  margin: 0 auto;
-  white-space: nowrap;
-}
-
 .stack {
   position: absolute;
   top: 150px;
   left: 150px;
 }
 
-.big {
+.big, .intro-bg{
   color: black;
   letter-spacing: 0.05em;
   font-weight: 500;
@@ -114,21 +112,21 @@ body {
 }
 
 .box {
-  position: relative;
+  position: absolute;
   top: 58px;
   left: -40px;
 }
 
-.small {
+.small, .intro-sm {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
 
-.nav .active {
+/* .nav .active {
   border-bottom:  4px solid rgba(100, 157, 200, 0.4);
-}
+} */
 
-.g-link:hover {
+.nav-item .active{
   border-bottom:  4px solid rgba(100, 157, 200, 0.4);
 }
 
@@ -141,10 +139,6 @@ body {
   text-align: -webkit-center;
 }
 
-#team {
-  text-align: -webkit-center;
-}
-
 .full {
   width: 100%;
 }
@@ -153,17 +147,13 @@ body {
   display: none;
 }
 
-.wtc {
-  text-align: -webkit-center;
-}
-
 .close {
   position: absolute;
   top: 5%;
   right: 8%;
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 450px) {
   .mobile {
     display: block;
     width: 100%;
@@ -179,6 +169,18 @@ body {
   #gallery-list {
     display: block;
     text-align: center;
+  }
+  .location-bg {
+    width:100% ;
+    height: 5rem;
+  }
+  .intro-sm {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .intro-bg{
+    font-weight: 500;
+    font-size: 2rem;
   }
 }
 
@@ -209,7 +211,7 @@ footer {
   border-top:  4px solid rgba(100, 157, 200, 0.4);
 }
 
-.pulse:hover{
+.pulse:hover, .img-fluid:hover{
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1s;
@@ -253,6 +255,7 @@ footer {
   font-weight: 500;
   color: white;
 }
+
 
 .boxe {
   position: relative;
