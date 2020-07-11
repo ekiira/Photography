@@ -87,6 +87,7 @@ body {
 
 .teal {
   color: #016193;
+  letter-spacing: 0.06em;
 }
 
 .dark {
@@ -99,6 +100,17 @@ body {
 
 #btnHide {
   display: none;
+  border: none;
+}
+
+#btnHide:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+#btnShow:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .box {
@@ -123,7 +135,6 @@ body {
 .size {
   width: 49px;
   height: 49px;
-
 }
 
 #gallery-wrapper {
@@ -140,22 +151,24 @@ body {
 
 .mobile {
   display: none;
-
 }
 
 .wtc {
   text-align: -webkit-center;
-
 }
 
-@media only screen and (max-width: 1000px) {
+.close {
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+
+@media only screen and (max-width: 380px) {
   .mobile {
     display: block;
     width: 100%;
     text-align: -webkit-center;
   }
-  
-
   
   #mobi-hidden {
     display: none;
@@ -163,13 +176,14 @@ body {
   #gallery-wrapper {
     display: none;
   }
+  #gallery-list {
+    display: block;
+    text-align: center;
+  }
 }
 
-dt {
-  font-weight: normal;
-}
-dd {
-  font-weight: bold;
+.fade {
+  background: rgba(0, 0, 0, 0.88);
 }
 
 .form-control {
@@ -193,14 +207,7 @@ dd {
 
 footer {
   border-top:  4px solid rgba(100, 157, 200, 0.4);
-
 }
-
-/* .brand {
-  background: #016193;
-  color: white;
-  border-radius: 0;
-} */
 
 .pulse:hover{
   -webkit-animation-name: pulse;
@@ -210,31 +217,45 @@ footer {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   }
-  @-webkit-keyframes pulse {
-  0% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
-  50% {
-  -webkit-transform: scale3d(1.05, 1.05, 1.05);
-  transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
-  }
-  @keyframes pulse {
-  0% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
-  50% {
-  -webkit-transform: scale3d(1.05, 1.05, 1.05);
-  transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  }
+    @-webkit-keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes pulse {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
   } 
+
+.sm-brand{
+  background-color: #016193;
+  padding: 18px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.boxe {
+  position: relative;
+  top: 18px;
+  left: -95px;
+}

@@ -1,5 +1,7 @@
 const buttonShow = document.getElementById('btnShow');
 const buttonHide = document.getElementById('btnHide');
+const hidewrapper = document.getElementById('hide-btn');
+
 const hide = document.getElementById('hidden');
 const mobiHide = document.getElementById('mobi-hidden');
 
@@ -9,7 +11,9 @@ buttonShow.addEventListener('click', () => {
 
   buttonShow.style.display = 'none';
   buttonHide.style.display = 'block';
-  buttonHide.style.textAlign = 'center';
+  // hidewrapper.style.textAlign = 'center'
+  // buttonHide.style.marginRight = 0
+  // buttonHide.style.textAlign = 'center';
 });
 
 buttonHide.addEventListener('click', () => {

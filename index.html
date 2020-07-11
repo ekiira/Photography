@@ -33,10 +33,10 @@
            </button>
            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                <ul class="navbar-nav ml-auto">
-                   <li class="nav-item"><a href="#about" class="nav-link mr-3 dark">HOME</a></li>  
-                   <li class="nav-item"><a href="#services" class="nav-link mr-3 dark">ABOUT</a></li>
-                   <li class="nav-item"><a href="#pricing" class="nav-link mr-3 dark">TEAM</a></li>
-                   <li class="nav-item"><a href="#testimonials" class="nav-link mr-3 dark">PORTFOLIO</a></li>
+                   <li class="nav-item"><a href="#home" class="nav-link mr-3 dark">HOME</a></li>  
+                   <li class="nav-item"><a href="#about" class="nav-link mr-3 dark">ABOUT</a></li>
+                   <li class="nav-item"><a href="#team" class="nav-link mr-3 dark">TEAM</a></li>
+                   <li class="nav-item"><a href="#portfolio" class="nav-link mr-3 dark">PORTFOLIO</a></li>
                    <li class="nav-item"><a href="#contact" class="nav-link mr-3 dark">CONTACT</a></li>
                </ul>
            </div>
@@ -66,7 +66,7 @@
                       </p>
                     </div>
                     <img src="./assets/images/SOCIALS ICONS.png" />
-                    <img src="./assets/images/bigBox.png" alt="" class="big-box">
+                    <!-- <img src="./assets/images/bigBox.png" alt="" class="big-box"> -->
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@
                     <div class="intro">
                         <h4 class="text-left">Best of</h4>
                         <h1 class="font-weight-bold text-left head">ARCHITECTURAL <br/> PHOTOGRAPHY</h1>
-                        <img src="./assets/images/bigBox.png" alt="" class="big-box">
+                        <!-- <img src="./assets/images/bigBox.png" alt="" class="big-box"> -->
                     </div>
                     <div class="text-left">
                       <p> Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum
@@ -102,7 +102,7 @@
             <div class="col-md-12 splash">
                 <div>
                     <div class="intro">
-                      <img src="./assets/images/bigBox.png" alt=""class="big-box">
+                      <!-- <img src="./assets/images/bigBox.png" alt=""class="big-box"> -->
                         <h4 class="text-left">Best of</h4>
                         <h1 class="font-weight-bold text-left head">ARCHITECTURAL <br/> PHOTOGRAPHY</h1>
                     </div>
@@ -136,7 +136,7 @@
    
 
 <!-- About section -->
-  <section class="about py-5">
+  <!-- <section class="about py-5" id="about">
     <div class="container">
       <div class="row">
         <div class="col-6 pl-3 pr-5 px-lg-1 pb-5">
@@ -162,7 +162,7 @@
       </div>
     </div>
 </section> 
-  
+   -->
 
 <!-- Team section -->
 
@@ -173,21 +173,34 @@
   <h2 class="text-left big"> TEAM.</h2>
   </div>
   <div class="row py-3">
-    <div class="col-12 col-lg-4 py-3">
+    <div class="col-12 col-md-4 py-3">
+      <div data-aos="fade-right"
+      data-aos-duration="1000"
+  
+     data-aos-easing="ease-in-sine">
       <img src="./assets/images/phg1.png" alt="" class="img-fluid"/>
-      <button class="text-center phg py-2 px-4">OLIVIA <br/> <span class="teal">THOMPSON </span></button>
+      <!-- <button class="text-center phg py-2 px-4">OLIVIA <br/> <span class="teal">THOMPSON </span></button> -->
     </div>
+  </div>
 
-    <div class="col-12 col-lg-4 py-3">
+    <div class="col-12 col-md-4 py-3">
+      <div data-aos="fade-right"
+      data-aos-duration="1000"
+
+     data-aos-easing="ease-in-sine">
       <img src="./assets/images/phg2.png" alt="" class="img-fluid"/>
-      <button class="text-center phg py-2 px-4">STEVEN <br/> <span class="teal">THOMPSON </span></button>
-
+      <!-- <button class="text-center phg py-2 px-4">STEVEN <br/> <span class="teal">THOMPSON </span></button> -->
+</div>
     </div>
 
-    <div class="col-12 col-lg-4 py-3">
-      <img src="./assets/images/phg3.png" alt="" class="img-fluid"/>
-      <button class="text-center phg py-2 px-4">THALIA <br/> <span class="teal">THOMPSON </span></button>
+    <div class="col-12 col-md-4 py-3">
+      <div data-aos="fade-right"
+      data-aos-duration="1000"
 
+     data-aos-easing="ease-in-sine">
+      <img src="./assets/images/phg3.png" alt="" class="img-fluid"/>
+      <!-- <button class="text-center phg py-2 px-4">THALIA <br/> <span class="teal">THOMPSON </span></button> -->
+</div>
     </div>
   </div>
 </div>  
@@ -198,7 +211,7 @@
   <section id="portfolio" class="portfolio py-5">
   <div class="container">  
 <!-- Nav links -->
-       <ul class="nav justify-content-center" >
+       <ul class="nav justify-content-center" id="gallery-list">
         <li class="nav-item"><a href="#all" class="nav-link mr-3 g-link dark active">ALL</a></li>  
         <li class="nav-item"><a href="#new-york" class="nav-link mr-3 g-link dark">NEW YORK</a></li>
         <li class="nav-item"><a href="#rome" class="nav-link mr-3 g-link dark">ROME</a></li>
@@ -214,19 +227,19 @@
       <div class="col-6">
         <div class="row">
           <div class="col-6 px-2 ria" data-toggle="modal" data-target="#img1" >
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-6 px-2 ria"data-toggle="modal" data-target="#img2" >
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 pt-3 px-2 ria"data-toggle="modal" data-target="#img3" >
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
             </div>
           </div>
@@ -234,19 +247,19 @@
       </div>
 
       <div class="col-6 px-2" data-toggle="modal" data-target="#img4">
-        <div data-aos="flip-left">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
     <div class="row py-2">
       <div class="col-6 px-2" data-toggle="modal" data-target="#img5">
-        <div data-aos="flip-left">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
         </div>
       </div>
       <div class="col-6 px-2" data-toggle="modal" data-target="#img6">
-        <div data-aos="flip-left">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
           <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
         </div>
       </div>
@@ -256,26 +269,26 @@
       <div class="col-6" >
         <div class="row">
           <div class="col-6 px-2" data-toggle="modal" data-target="#img7">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-7.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-6 px-2"data-toggle="modal" data-target="#img8">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-8.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 pt-3 px-2" data-toggle="modal" data-target="#img9">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-9.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
       <div class="col-6 px-2"data-toggle="modal" data-target="#img10">
-        <div data-aos="flip-left">
+        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
         <img src="./assets/images/photo-10.png" alt="" class="img-fluid">
         </div>
       </div>
@@ -288,26 +301,26 @@
           <div class="col-6">
             <div class="row">
               <div class="col-6 px-2" data-toggle="modal" data-target="#img11">
-                <div data-aos="flip-left">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                   <img src="./assets/images/photo-1.png" alt="" class="img-fluid">
                 </div>
               </div>
               <div class="col-6 px-2" data-toggle="modal" data-target="#img12">
-                <div data-aos="flip-left">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                   <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-12 pt-3 px-2" data-toggle="modal" data-target="#img13">
-                <div data-aos="flip-left">
+                <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                   <img src="./assets/images/photo-3.png" alt="" class="img-fluid">
                 </div>
               </div>
             </div>
           </div>
           <div class="col-6 px-2" data-toggle="modal" data-target="#img14">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
             </div>
           </div>
@@ -315,12 +328,12 @@
         </div>
         <div class="row py-2">
           <div class="col-6 px-2" data-toggle="modal" data-target="#img15">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
             </div>
           </div>
           <div class="col-6 px-2" data-toggle="modal" data-target="#img16">
-            <div data-aos="flip-left">
+            <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
               <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
             </div>
           </div>
@@ -333,57 +346,57 @@
       <div class="container mobile">
         <div class="row py-4">
 
-          <div >
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+          <div class="mx-auto">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img1">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img2">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img3">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img4">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3"  data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3"  data-toggle="modal" data-target="#mob-img5">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob2.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img6">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob4.png" alt="" class="img-fluid full">
               </div>
             </div>
           </div>
 
-          <div id="mobi-hidden">
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+          <div id="mobi-hidden" class="mx-auto">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img7">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob1.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img8">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob6.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img9">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob5.png" alt="" class="img-fluid full">
               </div>
             </div>
-            <div class="col-12 py-3" data-toggle="modal" data-target="#exampleModal">
-              <div data-aos="flip-left">
+            <div class="col-12 py-3" data-toggle="modal" data-target="#mob-img10">
+              <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img src="./assets/images/mob3.png" alt="" class="img-fluid full">
               </div>
             </div>
@@ -394,6 +407,9 @@
 <!-- Modal Images-->
       <div>
         <div class="modal fade" id="img1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-1.png" alt="" class="img-fluid">
@@ -401,6 +417,9 @@
           </div>
         </div>
         <div class="modal fade" id="img2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-2.png" alt="" class="img-fluid">
@@ -408,6 +427,9 @@
           </div>
         </div>
         <div class="modal fade" id="img3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-3.png" alt="" class="img-fluid">
@@ -415,6 +437,9 @@
           </div>
         </div>
         <div class="modal fade" id="img4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
@@ -422,6 +447,9 @@
           </div>
         </div>
         <div class="modal fade" id="img5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
@@ -429,6 +457,9 @@
           </div>
         </div>
         <div class="modal fade" id="img6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
@@ -436,6 +467,9 @@
           </div>
         </div>
         <div class="modal fade" id="img7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-7.png" alt="" class="img-fluid">
@@ -443,6 +477,9 @@
           </div>
         </div>
         <div class="modal fade" id="img8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-8.png" alt="" class="img-fluid">
@@ -450,20 +487,29 @@
           </div>
         </div>
         <div class="modal fade" id="img9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <img src="./assets/images/photo-9.png" alt="" class="img-fluid">
+              <img src="./assets/images/modal-9.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="modal fade" id="img10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <img src="./assets/images/photo-10.png" alt="" class="img-fluid">
+              <img src="./assets/images/modal-10.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
         <div class="modal fade" id="img11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-1.png" alt="" class="img-fluid">
@@ -471,6 +517,9 @@
           </div>
         </div>
         <div class="modal fade" id="img12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-2.png" alt="" class="img-fluid">
@@ -478,6 +527,9 @@
           </div>
         </div>
         <div class="modal fade" id="img13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/modal-3.png" alt="" class="img-fluid">
@@ -485,6 +537,9 @@
           </div>
         </div>
         <div class="modal fade" id="img14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
@@ -492,6 +547,9 @@
           </div>
         </div>
         <div class="modal fade" id="img15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
@@ -499,22 +557,125 @@
           </div>
         </div>
         <div class="modal fade" id="img16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
             </div>
           </div>
         </div>
+        <div class="modal fade" id="mob-img1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <img src="./assets/images/bi_x-square.svg" alt=""> 
+          </button>
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="mob-img2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <img src="./assets/images/bi_x-square.svg" alt=""> 
+         </button>
+         <div class="modal-dialog modal-dialog-centered">
+           <div class="modal-content">
+             <img src="./assets/images/modal-10.png" alt="" class="img-fluid">
+           </div>
+         </div>
+       </div>
+       <div class="modal fade" id="mob-img3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <img src="./assets/images/bi_x-square.svg" alt=""> 
+       </button>
+       <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">
+           <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+         </div>
+       </div>
+     </div>
+     <div class="modal fade" id="mob-img4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <img src="./assets/images/bi_x-square.svg" alt=""> 
+     </button>
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+       </div>
+     </div>
+   </div>
+   <div class="modal fade" id="mob-img5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <img src="./assets/images/bi_x-square.svg" alt=""> 
+   </button>
+   <div class="modal-dialog modal-dialog-centered">
+     <div class="modal-content">
+       <img src="./assets/images/modal-9.png" alt="" class="img-fluid">
+     </div>
+   </div>
+ </div>
+ <div class="modal fade" id="mob-img6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <img src="./assets/images/bi_x-square.svg" alt=""> 
+ </button>
+ <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+     <img src="./assets/images/photo-5.png" alt="" class="img-fluid">
+   </div>
+ </div>
+</div>
+<div class="modal fade" id="mob-img7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <img src="./assets/images/bi_x-square.svg" alt=""> 
+ </button>
+ <div class="modal-dialog modal-dialog-centered">
+   <div class="modal-content">
+     <img src="./assets/images/photo-2.png" alt="" class="img-fluid">
+   </div>
+ </div>
+</div>
+<div class="modal fade" id="mob-img8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+ <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+ <img src="./assets/images/bi_x-square.svg" alt=""> 
+</button>
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <img src="./assets/images/photo-10.png" alt="" class="img-fluid">
+  </div>
+</div>
+</div>
+<div class="modal fade" id="mob-img9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<img src="./assets/images/bi_x-square.svg" alt=""> 
+</button>
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+  <img src="./assets/images/photo-6.png" alt="" class="img-fluid">
+</div>
+</div>
+</div>
+<div class="modal fade" id="mob-img10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<img src="./assets/images/bi_x-square.svg" alt=""> 
+</button>
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+<img src="./assets/images/photo-4.png" alt="" class="img-fluid">
+</div>
+</div>
+</div>
       </div>
 
   <div class="text-center">
-    <button class="btn text-center" id="btnShow">
+    <button class="btn text-center w-100" id="btnShow">
       <img src="./assets/images/ant-design_plus-circle-outlined.png" alt="" class="img-fluid pulse">
     </button>
   </div>
-  <div class="text-center">
-    <button class="btn text-center" id="btnHide">
-     <img src="./assets/images/minus-circle-outlined.svg" alt="" class="img-fluid size pulse g-link"> 
+  <div class="text-center" id="hide-btn">
+    <button class="btn text-center w-100" id="btnHide">
+     <img src="./assets/images/minus-circle-outlined.svg" alt="" class="img-fluid size pulse"> 
      </button> 
    </div>
  </section>  
@@ -539,11 +700,11 @@
 
 <!-- Contact form  -->
       <div class="px-5">
-      <h3 class="teal"> <strong>GET IN TOUCH</strong></h3>
-      <p>Facilis denique eam ut, ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. Solum voluptaria referrentur ad usu.</p>
+      <h3 class="teal"> <strong>GET IN TOUCH.</strong></h3>
+      <p class="">Facilis denique eam ut, ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure. Solum voluptaria referrentur ad usu.</p>
     
       <div class="row py-4">
-        <div class="col-6">
+        <div class="col-12 col-lg-6 pb-5 pb-lg-0">
           <form>
             <div class="form-group pb-4">
               <input type="text" id="name" placeholder="Name*" class="form-control pt-3  pb-5">
@@ -553,20 +714,20 @@
 
             <input type="text" id="name" placeholder="Email*" class="form-control pt-3 pb-5">
             </div>
-            <textarea id="message" cols="30" rows="5" placeholder="Message*" class="form-control pt-3 pb-5"></textarea>
+            <textarea id="message" cols="30" rows="3" placeholder="Message*" class="form-control pt-3 pb-5"></textarea>
             <div class="pt-5">
               <button class="btn sendBtn py-3 px-5">SEND</button>
             </div>
           </form>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-lg-6">
           <dl>
-            <dt>Phone</dt>
-            <dd>+1 56775 345 34 / +1 56775 345 34</dd>
-            <dt>Email</dt>
-            <dd>ark.photography@hotmail.com</dd>
-            <dt>Address</dt>
-            <dd>23 fillory road, New York. NY 10065</dd>
+            <dt class="font-weight-light pb-1">Phone</dt>
+            <dd class="pb-3 font-weight-bold">+1 56775 345 34 / +1 56775 345 34</dd>
+            <dt class="font-weight-light pb-1">Email</dt>
+            <dd class="pb-3 font-weight-bold">ark.photography@hotmail.com</dd>
+            <dt class="font-weight-light pb-1">Address</dt>
+            <dd class="pb-3 font-weight-bold">23 fillory road, New York. NY 10065</dd>
 
           </dl>
           
@@ -577,14 +738,18 @@
   </section> 
 
 <!-- Footer -->
-<footer class="py-4">
-  <div class="container">
+<!-- <div class="container">
+<footer class="py-5 px-5">
+ 
     <div class="d-flex justify-content-between">
-<img src="./assets/images/SOCIALS ICONS-blk.png" alt="" class="img-fluid">
-<p>&copy ARK 2020. All Rights Reserved. </p>
-    </div>
+<span>
+  <img src="./assets/images/SOCIALS.svg" alt="" class="img-fluid">
+</span>
+<p class="mb-0">&copy ARK 2020. All Rights Reserved. <span class="sm-brand ml-2">ARK. </span> <img src="./assets/images/sm-brand-box.svg" alt="" class="boxe"> </p>
   </div>
+
 </footer>
+</div> -->
 
 
    <!-- Optional JavaScript -->
