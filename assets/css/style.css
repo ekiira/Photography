@@ -1,34 +1,3 @@
-
-
-.navbar {
-  height: 15%;
-}
-
-.brand {
-  color: white;
-    background: blue;
-  font-size: 2rem;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 html {
   scroll-behavior: smooth;
 }
@@ -45,6 +14,7 @@ body {
   background-size: cover;
   background-position: center; 
 }
+
 .two {
   width:100% ;
   height: 100vh;
@@ -73,10 +43,7 @@ body {
 .splash {
   height: 100%;
   width: 100%;
-  text-align: center;
   display: flex;
-  justify-content: start; 
-  align-items: center; 
 }
 
 .lct {
@@ -153,9 +120,22 @@ body {
   margin-bottom: 0;
 }
 
-/* .nav .active {
-  border-bottom:  4px solid rgba(100, 157, 200, 0.4);
-} */
+.navbar {
+  height: 10%;
+}
+
+.brand {
+  color: white;
+  background:  #016193;
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar-toggler {
+  float: right;
+}
 
 .nav-item .active{
   border-bottom:  4px solid rgba(100, 157, 200, 0.4);
@@ -182,37 +162,6 @@ body {
   position: absolute;
   top: 5%;
   right: 8%;
-}
-
-@media only screen and (max-width: 450px) {
-  .mobile {
-    display: block;
-    width: 100%;
-    text-align: -webkit-center;
-  }
-  
-  #mobi-hidden {
-    display: none;
-  }
-  #gallery-wrapper {
-    display: none;
-  }
-  #gallery-list {
-    display: block;
-    text-align: center;
-  }
-  .location-bg {
-    width:100% ;
-    height: 5rem;
-  }
-  .intro-sm {
-    font-size: 1rem;
-    margin-bottom: 0;
-  }
-  .intro-bg{
-    font-weight: 500;
-    font-size: 2rem;
-  }
 }
 
 .fade {
@@ -287,9 +236,47 @@ footer {
   color: white;
 }
 
-
 .boxe {
   position: relative;
   top: 18px;
   left: -95px;
 }
+
+
+@media only screen and (max-width: 450px) {
+  .mobile {
+    display: block;
+    width: 100%;
+    text-align: -webkit-center;
+  }
+  
+  #mobi-hidden {
+    display: none;
+  }
+  #gallery-wrapper {
+    display: none;
+  }
+  #gallery-list {
+    display: block;
+    text-align: center;
+  }
+  .location-bg {
+    width:100% ;
+    height: 5rem;
+  }
+  .intro-sm {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+  .intro-bg{
+    font-weight: 500;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-toggler {
+      display: none;
+    }
+  }
+  
