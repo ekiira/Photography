@@ -191,7 +191,7 @@ footer {
   border-top:  4px solid rgba(100, 157, 200, 0.4);
 }
 
-.pulse:hover, .img-fluid:hover{
+.pulse:hover{
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1s;
