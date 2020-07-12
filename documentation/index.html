@@ -8,7 +8,7 @@
   <head>
     <meta charset="utf-8" />
 
-    <title>Zuri Homes - Documentation</title>
+    <title>Ark Photography - Documentation</title>
 
     <meta name="description" content="" />
     <meta name="author" content="Team Syntax" />
@@ -140,7 +140,6 @@
         <li><a href="#fonts" title="Fonts">Fonts</a></li>
         <li><a href="#icons" title="Icons">Icons</a></li>
         <li><a href="#logo" title="Logo">Logo</a></li>
-        <li><a href="#sliders" title="Sliders">Sliders</a></li>
         <li><a href="#google_map" title="Google Map">Google Map</a></li>
         <li>
           <a href="#sources_and_credits" title="Sources and Credits"
@@ -155,8 +154,8 @@
     </div>
     <div id="documenter_content">
       <section id="documenter_cover">
-        <h1>Zuri Homes Ltd.</h1>
-        <h2>Responsive HTML5 Template</h2>
+        <h1>Ark Photography</h1>
+        <h2>Responsive HTML5 Template and Bootstrap</h2>
         <div id="documenter_buttons"></div>
         <hr />
         <ul>
@@ -252,19 +251,9 @@
         <pre class="prettyprint lang-html linenums">
 - assets/
   - css/
-    - global.css                - (Main CSS file) 
-    - homepage.css              - (HomePage Specific CSS file) 
-    - about.css                 - (About Specific CSS file) 
-    - residence.css             - (Residence Specific CSS file) 
-    - contact.css               - (Contact Specific CSS file) 
-    - responsive.css            - (Responsive Styling CSS file) 
-    - slick.css                 - (Slider CSS file) 
-    - slick.theme.css           - (Slider Theme CSS file) 
-
-    - bootstrap/bootstrap.min.css - (Bootstrap Minified CSS file)
-    - animate/animate.min.css     - (Animation Minified CSS file)
-
-  - fonts/  - contains fonts for slick slider library
+    - style.css                         -     (Main CSS file) 
+    - bootstrap/bootstrap.css       -         (Bootstrap CSS file)
+    - animation-on-scroll/aos.min.css   -     (Animation Minified CSS file)
 </pre
         >
       </section>
@@ -293,17 +282,13 @@
         <div>
           <pre class="prettyprint lang-html linenums">
 &lt;!-- Main Jquery JS --&gt;
-&lt;script src=&quot;./assets/js/jquery/jquery-3.5.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
+&lt;script src=&quot;./assets/js/jquery/jquery.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;        
 &lt;!-- Popper JS --&gt;
-&lt;script src=&quot;./assets/js/popper/popper.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;./assets/js/popper/popper.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt; 
 &lt;!-- Bootstrap JS --&gt;
-&lt;script src=&quot;./assets/js/bootstrap/bootstrap.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
-&lt;!-- Slick JS --&gt;
-&lt;script src=&quot;./assets/js/slick/slick.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;    
-&lt;!-- Wow JS --&gt;
-&lt;script src=&quot;./assets/js/wow/wow.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;   
+&lt;script src=&quot;./assets/js/bootstrap/bootstrap.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;       
 &lt;!-- Custom JS --&gt;
-&lt;script src=&quot;./assets/js/custom.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;./assets/js/index.js&quot;&gt;&lt;/script&gt;
 </pre
           >
         </div>
@@ -323,9 +308,8 @@
         </div>
         <div>
           <pre class="prettyprint lang-html linenums">
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&family=Varela+Round&display=swap');
-            </pre
-          >
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+          </pre>
         </div>
         <p>&nbsp;</p>
         <div>
@@ -345,14 +329,12 @@
           <div>
             <pre class="prettyprint lang-css linenums">
 :root {
-  --header-font: 'Playfair Display', serif;
-  --text-font: 'Poppins', sans-serif;
-  --nav-font: 'Varela Round', sans-serif;
-  --primary-color: #4070ff;
-  --secondary-color: #5983ff;
-  --grey-color: #e0e0e0;
-  --dark-color: #333;
-  --white-color: #fff;
+  --main-font-family: 'Roboto', sans-serif;
+  --header-text-color: #fff
+  --main-bg: #fff;
+  --primary-text-color: #000;
+  --secondary-text-color: #016193;
+  --pre-loader-color: #016193;
 }</pre
             >
           </div>
@@ -390,115 +372,8 @@
           image logo
         </p>
         <pre class="prettyprint lang-html linenums">
-&lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt; &lt;img src=&quot;./assets/images/...path to your logo<span style="font-family: Arial, Verdana, sans-serif;">... path to your image logo ...</span><span style="font-family: Arial, Verdana, sans-serif;">&quot; alt=&quot;logo&quot; /&gt; &lt;/a&gt;</span>
+&lt;a class=&quot;logo px-5 py-4 font-weight-bold&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;py-5&quot;&gt;ARK.&lt;/span&gt;&lt;/a&gt;
 </pre>
-      </section>
-      <section id="sliders">
-        <div class="page-header">
-          <h3>Sliders</h3>
-          <hr class="notop" />
-        </div>
-        <div>
-          Slick slider is the slider you will find in the content. It's an essay
-          to use lighweight carousel with some decent features.
-        </div>
-        <div>
-          &nbsp;
-        </div>
-        <div>
-          <div>
-            <div>
-              Estate Section slider has class &#39;sliders&#39; and each slide
-              has &#39;&lt;div class=&quot;slider-item&quot;&gt;&#39; wrapper
-              for easy find where slide html code start. If you wont remove some
-              slide just remove div with all content like this &#39;&lt;div
-              class=&quot;item&quot;&gt;&#39;
-            </div>
-            <div>
-              &nbsp;
-            </div>
-          </div>
-          <pre class="prettyprint lang-html linenums">
-&lt;!-- Sliders --&gt;
-&lt;div class=&quot;sliders&quot;&gt;
-    &lt;div class=&quot;row home-sliders&quot;&gt;
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-          &lt;img src=&quot;./assets/images/sliders/house.png&quot; alt=&quot;Exclusive Apartment&quot; class=&quot;img-fluid slider-img&quot; &gt;
-          &lt;div class=&quot;slider-desc p-2 px-3&quot;&gt;
-            &lt;p class=&quot;slider-name m-0&quot;&gt;Exclusive Apartment&quot;/p&gt;
-            &lt;a href=&quot;#&quot; class=&quot;slider-link&quot;&gt;Explore &gt;&quot;/a&gt;
-          &lt;/div&gt;          
-      &lt;/div&gt;
-
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-
-      &lt;div class=&quot;col-md-4 slider-item&quot;&gt;
-            ...
-      &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/section&gt;
-&lt;!-- /.Testimonial --&gt;</pre
-          >
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            If you want change option for sliders you need to open
-            assets/js/custom.js and find &#39;// Our Sliders Start&#39; function
-            and set true/false for option what you wont to change
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <div>
-            &nbsp;
-          </div>
-          <pre class="prettyprint lang-js linenums">
-// Slick Slider Configuration
-$(document).ready(function () {
-  // Homepage Sliders
-  $('.home-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 3,
-    dots: true,
-    prevArrow: $('.prev-btn'),
-    nextArrow: $('.next-btn'),
-  })
-
-  $('.residence-sliders').slick({
-    autoplaySpeed: 2000,
-    slidesToShow: 4,
-    dots: true,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: true,
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slideToScroll: 1,
-        },
-      },
-    ],
-  })
-})
-</pre
-          >
-        </div>
-        <p>
-          You can find more documentation here&nbsp;<a
-            href="https://kenwheeler.github.io/slick/"
-            target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </p>
       </section>
       <section id="google_map">
         <div class="page-header">
@@ -576,33 +451,27 @@ $(document).ready(function () {
             >https://popper.js.org/</a
           >
         </div>
-
         <div>
-          <strong>Slick Slider</strong>&nbsp;2 -
-          <a href="https://kenwheeler.github.io/slick/" target="_blank"
-            >https://kenwheeler.github.io/slick/</a
-          >
-        </div>
-        <div>
-          <strong>animate.css</strong> -&nbsp;<a
-            href="http://daneden.me/animate"
-            >http://daneden.me/animate</a
-          >
-        </div>
-        <div>
-          <strong>wow.js</strong> -&nbsp;<a
-            href="http://mynameismatthieu.com/WOW/"
-            >http://mynameismatthieu.com/WOW</a
-          >/
-        </div>
-        <div>
-          <strong>jquery.sticky.js</strong> -&nbsp;<a
-            href="http://stickyjs.com/"
-            >http://stickyjs.com/</a
+          <strong>Animate on scroll library</strong> -&nbsp;<a
+            href="https://michalsnik.github.io/aos"
+            >https://michalsnik.github.io/aos/</a
           >
         </div>
         <div>
           &nbsp;
+        </div>
+        <div>
+          Images:
+        </div>
+        <div>
+          <strong>Unsplash</strong> -&nbsp;<a href="https://unsplash.com/"
+            >https://unsplash.com/</a
+          >
+        </div>
+        <div>
+          <strong>Pexels</strong> -&nbsp;<a href="https://www.pexels.com/"
+            >https://www.pexels.com/</a
+          >
         </div>
       </section>
     </div>
