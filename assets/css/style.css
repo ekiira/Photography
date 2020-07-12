@@ -3,32 +3,32 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   width: 100%;
 }
 
 .one {
-  width:100% ;
+  width: 100%;
   height: 100vh;
   background: url(../images/bg.png) no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .two {
-  width:100% ;
+  width: 100%;
   height: 100vh;
   background: url(../images/bg-2.png) no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .three {
-  width:100% ;
+  width: 100%;
   height: 100vh;
   background: url(../images/bg3.png) no-repeat;
   background-size: cover;
-  background-position: center; 
+  background-position: center;
 }
 
 .bans {
@@ -51,7 +51,7 @@ body {
 }
 
 .location-bg {
-  width:100% ;
+  width: 100%;
   height: 10rem;
   background: url(../images/locationbg.png) no-repeat;
   background-size: cover;
@@ -60,11 +60,12 @@ body {
 
 .stack {
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 50%;
+  left: 65%;
 }
 
-.big, .intro-bg{
+.big,
+.intro-bg {
   color: black;
   letter-spacing: 0.05em;
   font-weight: 500;
@@ -111,11 +112,12 @@ body {
 
 .box {
   position: absolute;
-  top: 58px;
-  left: -40px;
+  top: -20%;
+  left: -10%;
 }
 
-.small, .intro-sm {
+.small,
+.intro-sm {
   font-size: 1.5rem;
   margin-bottom: 0;
 }
@@ -126,7 +128,7 @@ body {
 
 .brand {
   color: white;
-  background:  #016193;
+  background: #016193;
   font-size: 2rem;
   text-align: center;
   position: relative;
@@ -192,47 +194,47 @@ body {
 }
 
 footer {
-  border-top:  4px solid rgba(100, 157, 200, 0.4);
+  border-top: 4px solid rgba(100, 157, 200, 0.4);
 }
 
-.pulse:hover{
+.pulse:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
+}
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
   }
-    @-webkit-keyframes pulse {
-    0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-    }
-    50% {
+  50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
-    }
-    100% {
+  }
+  100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-    }
-    }
-    @keyframes pulse {
-    0% {
+  }
+}
+@keyframes pulse {
+  0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-    }
-    50% {
+  }
+  50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
     transform: scale3d(1.05, 1.05, 1.05);
-    }
-    100% {
+  }
+  100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-    }
-  } 
+  }
+}
 
-.sm-brand{
+.sm-brand {
   background-color: #016193;
   padding: 18px 30px;
   font-size: 20px;
@@ -257,7 +259,7 @@ footer {
     width: 100%;
     text-align: -webkit-center;
   }
-  
+
   #mobi-hidden {
     display: none;
   }
@@ -269,14 +271,14 @@ footer {
     text-align: center;
   }
   .location-bg {
-    width:100% ;
+    width: 100%;
     height: 5rem;
   }
   .intro-sm {
     font-size: 1rem;
     margin-bottom: 0;
   }
-  .intro-bg{
+  .intro-bg {
     font-weight: 500;
     font-size: 2rem;
   }
@@ -288,21 +290,51 @@ footer {
 
 @media (min-width: 992px) {
   .navbar-toggler {
-      display: none;
-    }
+    display: none;
   }
-  
-  .loader {
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media (max-width: 999px) {
+  .w-63 {
+    width: 63% !important;
+  }
+}
+@media (max-width: 768px) {
+  .font p {
+    font-size: 12px;
+  }
+  .big,
+  .intro-bg {
+    color: black;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+  .box {
+    position: absolute;
+    top: -9%;
+    left: -6%;
+    width: 62px;
+    height: 22px;
+  }
+}
+
+@media (max-width: 430px) {
+  .img-fluid.about {
+    /* width: 89px; */
+  }
+}
+.loader {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader.hidden {
@@ -312,8 +344,8 @@ footer {
 
 @keyframes fadeOut {
   100% {
-      opacity: 0;
-      visibility: hidden;
+    opacity: 0;
+    visibility: hidden;
   }
 }
 
@@ -343,7 +375,8 @@ footer {
 }
 
 @keyframes lds-grid {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
