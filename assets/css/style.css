@@ -282,10 +282,9 @@ footer {
     font-weight: 500;
     font-size: 2rem;
   }
-  /* .footer {
-    display: block;
-    text-align: center;
-  } */
+  .teams {
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 992px) {
