@@ -260,6 +260,10 @@ footer {
     text-align: -webkit-center;
   }
 
+  .teams {
+    margin: 0 auto;
+  }
+
   #mobi-hidden {
     display: none;
   }
