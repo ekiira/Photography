@@ -286,10 +286,10 @@ footer {
     font-weight: 500;
     font-size: 2rem;
   }
-  /* .footer {
-    display: block;
-    text-align: center;
-  } */
+  .lds-grid {
+    margin: 0 auto;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -323,11 +323,6 @@ footer {
   }
 }
 
-@media (max-width: 430px) {
-  .img-fluid.about {
-    /* width: 89px; */
-  }
-}
 .loader {
   position: fixed;
   z-index: 99;
