@@ -52,11 +52,11 @@
               <div class="container">
                 <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#home" class="nav-link text-white mr-3 dark">HOME</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link text-white mr-3 dark">ABOUT</a></li>
-                    <li class="nav-item"><a href="#team" class="nav-link text-white mr-3 dark">TEAM</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white mr-3 dark">PORTFOLIO</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link text-white mr-3 dark">CONTACT</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link text-white font-weight-bold mr-3 dark">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link text-white font-weight-bold mr-3 dark">ABOUT</a></li>
+                    <li class="nav-item"><a href="#team" class="nav-link text-white font-weight-bold mr-3 dark">TEAM</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link text-white font-weight-bold mr-3 dark">PORTFOLIO</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-white font-weight-bold mr-3 dark">CONTACT</a></li>
                   </ul>
                 </div>
               </div>
@@ -188,11 +188,11 @@
             </div>
             <h2 class="big">OUR COMPANY.</h2>
           </div>
-          <p>Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum patrioque vix ad,
+          <p class="about-text py-2">Lorem ipsum dolor sit amet, vix odio integre ei. Nulla minimum patrioque vix ad,
             id cum habeo delicata, ne minim comprehensam eos. Eu vim tempor aliquip.
             Docendi delectus insolens pri ei, no vel ludus putant persius.
           </p>
-          <p class="pt-3">
+          <p class="about-text pt-3">
             Facilis denique eam ut,
             ad accusamus cotidieque eos. Quem vivendum signiferumque in usu, ea eam quas aeque iriure.
             Solum voluptaria referrentur ad usu.
@@ -209,9 +209,9 @@
     <div class="container">
       <div class="row  ml-0">
         <div class="container">
-          <div class="col-md-12 lct h-100 w-100 d-flex justify-content-center align-items-center">
+          <div class="col-md-12 lct h-100 w-100 d-flex justify-content-center align-items-center pt-0 pt-lg-4">
             <div>
-              <div>
+              <div class="pt-1 pt-lg-5">
                 <p class="small">Our</p>
                 <h2 class="big"> TEAM.</h2>
               </div>
@@ -250,17 +250,20 @@
 
   <section id="portfolio" class="portfolio py-5">
     <div class="container">
-      <!-- Nav links -->
-      <nav class="navbar">
-        <ul class="nav mx-auto" id="gallery-list">
-          <li class="nav-item"><a href="#all" class="nav-link mr-3 g-link dark active">ALL</a></li>
-          <li class="nav-item"><a href="#new-york" class="nav-link mr-3 g-link dark">NEW YORK</a></li>
-          <li class="nav-item"><a href="#rome" class="nav-link mr-3 g-link dark">ROME</a></li>
-          <li class="nav-item"><a href="#london" class="nav-link mr-3 g-link dark">LONDON</a></li>
-          <li class="nav-item"><a href="#paris" class="nav-link mr-3 g-link dark">PARIS</a></li>
-          <li class="nav-item"><a href="#milan" class="nav-link mr-3 g-link dark">MILAN</a></li>
-        </ul>
-      </nav>
+      <!-- Links -->
+      <div class="row">
+        <div class="col-12">
+            <ul class="d-flex justify-content-center list-inline">
+                <li class="categories selected mr-5 active">ALL</li>
+                <li class="categories mr-5">NEW YORK</li>
+                <li class="categories mr-5">ROME</li>
+                <li class="categories mr-5">LONDON</li>
+                <li class="categories mr-5">PARIS</li>
+                <li class="categories mr-5">MILAN</li>
+            </ul>
+        </div>
+    </div>
+ 
       <!-- Portfolio-images -->
 
       <div class="container pt-5" id="gallery-wrapper">
@@ -444,6 +447,8 @@
           </div>
         </div>
       </div>
+
+      <!--  -->
 
       <!-- Modal Images-->
       <div>
@@ -737,12 +742,12 @@
 
       <div class="text-center">
         <button class="btn text-center w-100" id="btnShow">
-          <img src="./assets/images/ant-design_plus-circle-outlined.png" alt="" class="img-fluid pulse">
+          <img src="./assets/images/ant-design_plus-circle-outlined.png" alt="View-more" class="img-fluid pulse">
         </button>
       </div>
       <div class="text-center" id="hide-btn">
         <button class="btn text-center w-100" id="btnHide">
-          <img src="./assets/images/minus-circle-outlined.svg" alt="" class="img-fluid size pulse">
+          <img src="./assets/images/minus-circle-outlined.svg" alt="Hide" class="img-fluid size pulse">
         </button>
       </div>
   </section>
